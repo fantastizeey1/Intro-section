@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" 
@@ -17,12 +20,12 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
-  <script src="/button.js"></script>
+  <script src="button.js"></script>
 </head>
 <body>
 <header>
   <div class="logo">
-    <img src="/images/logo.svg" alt="logo">
+    <img src="logo.svg" alt="logo">
   </div>
 <div class="header-top" 
       id="header-top">
@@ -30,22 +33,22 @@
     <div class="btn1">
       <button class="drop-btn1" onclick="myBtn1Clicked()">
           Features
-          <img src="/images/icon-arrow-down.svg" id="drop-down-arrow1" alt="Down Arrow" />
-          <img src="/images/icon-arrow-up.svg" id="go-up-arrow1" alt="Up Arrow" style="display: none;" />
+          <img src="icon-arrow-down.svg" id="drop-down-arrow1" alt="Down Arrow" />
+          <img src="icon-arrow-up.svg" id="go-up-arrow1" alt="Up Arrow" style="display: none;" />
       </button>
       <div class="dropdown-content1" id="myDropdown1">
-          <a href="#"><img src="/images/icon-todo.svg" alt="Todo" /> ToDo List</a>
-          <a href="#"><img src="/images/icon-calendar.svg" alt="Calendar" /> Calendar</a>
-          <a href="#"><img src="/images/icon-reminders.svg" alt="Reminders" /> Reminders</a>
-          <a href="#"><img src="/images/icon-planning.svg" alt="Planning" /> Planning</a>
+          <a href="#"><img src="icon-todo.svg" alt="Todo" /> ToDo List</a>
+          <a href="#"><img src="icon-calendar.svg" alt="Calendar" /> Calendar</a>
+          <a href="#"><img src="icon-reminders.svg" alt="Reminders" /> Reminders</a>
+          <a href="#"><img src="icon-planning.svg" alt="Planning" /> Planning</a>
       </div>
   </div>
   
   <div class="btn2">
     <button class="drop-btn2" onclick="myBtn2Clicked()">
         Company
-        <img src="/images/icon-arrow-down.svg" id="drop-down-arrow2" alt="Down Arrow" />
-        <img src="/images/icon-arrow-up.svg" id="go-up-arrow2" alt="Up Arrow" style="display: none;" />
+        <img src="icon-arrow-down.svg" id="drop-down-arrow2" alt="Down Arrow" />
+        <img src="icon-arrow-up.svg" id="go-up-arrow2" alt="Up Arrow" style="display: none;" />
     </button>
     <div class="dropdown-content2" id="myDropdown2">
         <a href="#">History</a>
@@ -63,9 +66,9 @@
   </div>
 </div>
 <div class="show-close">
-  <img src="/images/icon-menu.svg" alt=""  
+  <img src="icon-menu.svg" alt=""  
           class="show-nav" id="show-nav">
-    <img src="/images/icon-close-menu.svg" alt=""
+    <img src="icon-close-menu.svg" alt=""
         class="close-nav" id="close-nav">
 </div>
 </header>
@@ -82,15 +85,15 @@
           Learn more
         </button>
         <div class="img-logo">
-          <img src="/images/client-databiz.svg" alt="">
-          <img src="/images/client-audiophile.svg" alt="">
-          <img src="/images/client-meet.svg" alt="">
-          <img src="/images/client-maker.svg" alt="">
+          <img src="client-databiz.svg" alt="">
+          <img src="client-audiophile.svg" alt="">
+          <img src="client-meet.svg" alt="">
+          <img src="client-maker.svg" alt="">
         </div>
       </section>
       <section>
-        <img src="/image-hero-mobile.png" alt="" class="mobile-img">
-        <img src="/images/image-hero-desktop.png" alt="" class="full-img" id="full-img">
+        <img src="image-hero-mobile.png" alt="" class="mobile-img">
+        <img src="image-hero-desktop.png" alt="" class="full-img" id="full-img">
       </section>
     </article>
   </main>
@@ -107,7 +110,7 @@
   <!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">prevail</a>.
   </div>-->
 </body>
 </html>
