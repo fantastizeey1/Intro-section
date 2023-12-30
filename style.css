@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-width: 100%;
+}
+body{
+    background-color: hsl(0, 2%, 87%);
+    font-family: 'Epilogue', sans-serif;
+}
+header {
+    overflow: hidden;
+    /* Replace with your desired background color */
+}
+.show-nav {
+    display: none;
+  }
+  .close-nav {
+    display: none;
+  }
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.logo{
+    padding: 2em;
+    float: left;
+}
+.drop-btn1{
+    border: none;
+    background-color: transparent;
+    padding: 1em;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+    font-size: 1em;
+    font-weight: 500;
+}
+.drop-btn2{
+    border: none;
+    background-color: transparent;
+    padding: 1em;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+    font-size: 1em;
+    font-weight: 500;
+}
+.header-left a{
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.header-right a{
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: 500;
+}
+.register{
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+}
+.drop-btn1:hover,
+.drop-btn2:hover,
+.header-right a:hover,
+.header-left a:hover {
+    color: hsl(0, 0%, 8%);
+} 
+.register:hover{
+    border: 1px solid hsl(0, 0%, 8%);
+}
+.dropdown-content1{
+    display: none; /* Initially hidden */
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+    width: 10em;
+    background-color: white;
+    border-radius: 0.5em;
+    font-size: 0.7em;
+    position: absolute
+    
+}
+.dropdown-content1 a {
+    display: block;
+    padding: 5px 5px; /* Adjust padding as needed */
+    margin: 0;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%); /* Adjust color as needed */
+}
+.dropdown-content1 a img {
+    padding-right: 0.3em;
+}
+.dropdown-content2 {
+    display: none; /* Initially hidden */
+    list-style: none;
+    padding: 1em;
+    margin: 0 1em;
+    width: 8em;
+    background-color: white;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+    position: absolute
+}
+.dropdown-content2 a {
+    display: block;
+    padding: 5px 5px; /* Adjust padding as needed */
+    margin: 0;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%); /* Adjust color as needed */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 80%;
+    margin: 0 auto;
+    padding: 2em;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1em;
+}
+
+h1{
+    width: 75%;
+    color: hsl(211, 93%, 5%);
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0%;
+    padding: 1em 0;
+}
+p{
+    font-size: 1em;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    width: 60%;
+    padding: 1em;
+}
+.learn-more-btn{
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 2.5em;
+    margin: 1EM;
+}
+.learn-more-btn:hover{
+    border: 1px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+    background-color: transparent;
+    font-weight: 700;
+    font-weight: bolder;
+}
+.img-logo{
+    display: flex;
+    flex-direction: row;
+    padding: 3em 0;
+}
+.img-logo img{
+    padding-right: 1em;
+}
+.full-img{
+width: 100%;
+height: 70vh;
+}
+.mobile-img{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    body{
+        width: 100%;
+    }
+    .logo{
+        display: flex;
+        padding: 10px;
+        width: 200px;
+        float: left;
+    }
+    .header-top {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: -40px;
+        position: absolute;
+        background-color: transparent;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: block;
+        background-color: hsl(0, 0%, 98%);
+        
+      
+    }
+    
+    .logo img{
+        position: absolute;
+        width: 18%;
+    }
+    .header-top .header-left {
+        display: block;
+        align-items: center;
+        padding: 10px;
+        height: 60%;
+      }
+      .header-top .header-left .drop-btn1{
+        display: block;
+      }
+
+      .header-top .header-left a{
+        display: block
+      }
+
+      .header-top .header-right a{
+        display: block;
+      }
+      
+     
+      .register{
+        
+        padding: 5px 40px;
+      }
+      
+    .show-nav {
+        display: inline-block; /* Or display: block; depending on your layout */
+        float: right;
+        margin-right: 2em;
+        margin-top: 1em;
+        z-index: 1;
+    }
+    .close-nav {
+        display: none; /* Initially hidden, displayed when show-nav is clicked */
+        position: relative;
+        z-index: 1;
+        float: right;
+        margin-right: 2em;
+        margin-top: 1em;
+    }
+    .dropdown-content1{
+        position: relative;
+    }
+    .dropdown-content2{
+        position: relative;
+    }
+    main{
+        margin: 0;
+        padding: 10px;
+        max-height: 100%;
+        width: 100%;
+    }
+    main article{
+        flex-direction: column-reverse;
+        }
+    main article section{
+        width: 100%;
+        text-align: center;
+    }
+    section{
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .full-img{
+        display: none;
+    }
+    .mobile-img{
+        display: flex;
+    }
+    h1{
+        width: 90%;
+        font-size: 2.5em;
+        text-align: center;
+        padding: 1em 0 0.5em 0;
+        
+    }
+    p{
+        width: 90%;
+        font-size: 1em;
+        text-align: center;
+    }
+    .learn-more-btn{
+        border: 1px solid hsl(0, 0%, 8%);
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 98%);
+        width: 40%;
+        height: 3.5em;
+        margin: 1em;
+        margin-left: 30%;
+    }
+    .img-logo{
+        display: flex;
+        flex-direction: row;
+        padding: 0.5em 0;
+    }
+    .img-logo img{
+        padding-right: 2em;
+        height: 1.2em;
+    }
+
+
+  }
