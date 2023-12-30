@@ -151,14 +151,14 @@ h1{
     font-size: 4rem;
     font-weight: 700;
     margin: 0%;
-    padding: 1em 0;
+    padding: 2em 0;
 }
 p{
     font-size: 1em;
     font-weight: 500;
     color: hsl(0, 0%, 41%);
     width: 60%;
-    padding: 1em;
+    padding: 1.5em;
 }
 .learn-more-btn{
     border: 1px solid hsl(0, 0%, 8%);
@@ -169,7 +169,7 @@ p{
     justify-content: center;
     width: 20%;
     height: 2.5em;
-    margin: 1EM;
+    margin: 1em;
 }
 .learn-more-btn:hover{
     border: 1px solid hsl(0, 0%, 8%);
@@ -184,7 +184,7 @@ p{
     padding: 3em 0;
 }
 .img-logo img{
-    padding-right: 1em;
+    padding-right: 1.5em;
 }
 .full-img{
 width: 100%;
